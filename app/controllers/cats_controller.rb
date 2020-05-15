@@ -3,6 +3,7 @@ class CatsController < ApplicationController
     def index
         @cats = Cat.all
         render json: {"Cats" => @cats}
+        # render json: @cats
     end
 
     def show
